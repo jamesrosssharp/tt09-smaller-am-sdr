@@ -4,8 +4,8 @@
 # defaults
 SIM ?= icarus
 TOPLEVEL_LANG ?= verilog
-SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = project.v top.v spi.v rf_mixer_nco.v if_filter.v envelope_detector.v
+SRC_DIR = $(PWD)/../../src
+PROJECT_SOURCES = if_filter.v
 
 ifneq ($(GATES),yes)
 

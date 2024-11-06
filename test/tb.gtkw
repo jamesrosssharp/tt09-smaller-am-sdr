@@ -1,25 +1,25 @@
 [*]
-[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
-[*] Mon Nov 20 16:00:28 2023
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Wed Nov  6 07:25:58 2024
 [*]
-[dumpfile] "/home/uri/p/tt-new-template-proto/test/tb.vcd"
-[dumpfile_mtime] "Mon Nov 20 15:58:34 2023"
-[dumpfile_size] 1110
-[savefile] "/home/uri/p/tt-new-template-proto/test/tb.gtkw"
-[timestart] 0
-[size] 1376 600
+[dumpfile] "/home/jrsharp/home_mnt/code/tt09-smaller-am-sdr/test/tb.vcd"
+[dumpfile_mtime] "Wed Nov  6 07:24:46 2024"
+[dumpfile_size] 463383039
+[savefile] "/home/jrsharp/home_mnt/code/tt09-smaller-am-sdr/test/tb.gtkw"
+[timestart] 446400000
+[size] 1920 996
 [pos] -1 -1
-*-24.534533 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-24.534533 510420000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] tb.
+[treeopen] tb.user_project.
+[treeopen] tb.user_project.am_sdr0.
 [sst_width] 297
 [signals_width] 230
 [sst_expanded] 1
-[sst_vpaned_height] 158
+[sst_vpaned_height] 305
 @28
 tb.user_project.ena
-@29
 tb.user_project.clk
-@28
 tb.user_project.rst_n
 @200
 -Inputs
@@ -35,5 +35,38 @@ tb.user_project.uio_out[7:0]
 -Output Pins
 @22
 tb.user_project.uo_out[7:0]
+tb.user_project.am_sdr0.nco0.nco_phase[19:0]
+@8420
+tb.user_project.am_sdr0.nco0.if_out[7:0]
+tb.user_project.am_sdr0.filt0.if_filt_out[7:0]
+@22
+tb.user_project.am_sdr0.filt0.xn_1[7:0]
+tb.user_project.am_sdr0.filt0.xn_2[7:0]
+tb.user_project.am_sdr0.spi0.phase_inc[19:0]
+@8420
+tb.user_project.am_sdr0.filt0.xn_0[7:0]
+tb.user_project.am_sdr0.filt0.xn_1[7:0]
+@28
+tb.user_project.am_sdr0.filt0.a1[15:0]
+tb.user_project.am_sdr0.filt0.a2[15:0]
+@420
+tb.user_project.am_sdr0.filt0.b0[15:0]
+tb.user_project.am_sdr0.filt0.b2[15:0]
+@22
+tb.user_project.am_sdr0.filt0.xn_0[7:0]
+tb.user_project.am_sdr0.filt0.xn_1[7:0]
+tb.user_project.am_sdr0.filt0.xn_2[7:0]
+@420
+tb.user_project.am_sdr0.filt0.mul_b0[23:0]
+tb.user_project.am_sdr0.filt0.mul_b2[23:0]
+@22
+tb.user_project.am_sdr0.filt0.sum[25:0]
+tb.user_project.am_sdr0.filt0.if_filt_out[7:0]
+@8420
+tb.user_project.am_sdr0.det0.env_out[7:0]
+@20000
+-
+@20001
+-
 [pattern_trace] 1
 [pattern_trace] 0

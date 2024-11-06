@@ -1,0 +1,31 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Tue Nov  5 08:08:29 2024
+[*]
+[dumpfile] "/home/jrsharp/home_mnt/code/tt09-smaller-am-sdr/devel_test/001_IF_FILTER/tb.vcd"
+[dumpfile_mtime] "Tue Nov  5 08:08:02 2024"
+[dumpfile_size] 7088
+[savefile] "/home/jrsharp/home_mnt/code/tt09-smaller-am-sdr/devel_test/001_IF_FILTER/config.gtkw"
+[timestart] 97500
+[size] 1000 600
+[pos] 795 162
+*-16.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb.
+[sst_width] 223
+[signals_width] 134
+[sst_expanded] 1
+[sst_vpaned_height] 150
+@28
+tb.if0.clk
+@420
+tb.if0.xn_0[20:0]
+tb.if0.xn_1[20:0]
+tb.if0.xn_2[20:0]
+tb.if0.yn_0[20:0]
+tb.if0.yn_1[20:0]
+tb.if0.yn_2[20:0]
+tb.if0.sum[25:0]
+@421
+tb.if0.sum_out[20:0]
+[pattern_trace] 1
+[pattern_trace] 0
