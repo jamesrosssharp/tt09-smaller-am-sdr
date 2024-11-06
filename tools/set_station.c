@@ -106,7 +106,7 @@ int main(int argc, char **argv)
 //	char buffer[] = {0xaa, 0xaa, 0xaa, 0x20};
 
 
-	int64_t phase_incr = ((1ULL<<20) * ((int64_t)freq - 455000)) / 50250000;
+	int64_t phase_incr = ((1ULL<<20) * ((int64_t)freq - 455000 / 2)) / 25125000;
 
 	buffer[2] = phase_incr & 0xff;
 	buffer[1] = (phase_incr >> 8) & 0xff;

@@ -47,7 +47,7 @@ begin
     if (RSTb == 1'b0) begin
         state       <= state_idle;
 
-        shift_reg  <= 24'h507380;
+        shift_reg  <= 24'h307380;
 
         CS_q    <= 1'b0;
         CS_qq   <= 1'b0;

@@ -27,8 +27,8 @@ reg signed [13:0] yn_1, yn_2;
 reg signed [7:0]  xn_1, xn_2;
 
 
-wire signed [15:0] a1 = -16'd16276;
-wire signed [15:0] a2 = 16'd8110;
+wire signed [15:0] a1 = -16'd16347;
+wire signed [15:0] a2 = 16'd8182;
 
 wire signed [15:0] b0 = 16'd5;
 wire signed [15:0] b2 = -16'd5;
@@ -76,7 +76,7 @@ begin
         endcase
 
        // Uncomment this to meet timing on FPGA
-        if_filt_out <= sum_out[16:9];
+        //if_filt_out <= sum_out[16:9];
         yn_1 <= sum_out[20:7];
         yn_2 <= yn_1;
     end 
