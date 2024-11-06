@@ -43,8 +43,8 @@ always @(posedge CLK)
 begin
     if (RSTb == 1'b0) begin
         state       <= state_idle;
-        gain        <= 4'd2;        // Set these to sensible defaults
-        phase_inc   <= 26'h1312eb;  //
+        gain        <= 3'd5;        // Set these to sensible defaults
+        phase_inc   <= 20'h71f3;  //
 
         CS_q    <= 1'b0;
         CS_qq   <= 1'b0;

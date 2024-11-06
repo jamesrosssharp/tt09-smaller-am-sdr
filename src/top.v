@@ -38,8 +38,6 @@ spi spi0
 
 );
 
-always @(posedge clk) PWM_OUT <= 1'b0;
-
 wire [7:0] if_out;
 
 rf_mixer_nco nco0
