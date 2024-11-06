@@ -15,8 +15,8 @@ module spi
     input SCK,
     input CS,
 
-    output reg [19:0] phase_inc,
-    output reg [2:0]  gain
+    output [19:0] phase_inc,
+    output [2:0]  gain
 
 );
 
@@ -39,12 +39,15 @@ reg SCK_qqq;
 reg MOSI_q;
 reg MOSI_qq;
 
+assign phase_inc = shift_reg[19:0];
+assign gain = shift_reg[22:20];
+
 always @(posedge CLK)
 begin
     if (RSTb == 1'b0) begin
         state       <= state_idle;
-        gain        <= 3'd5;        // Set these to sensible defaults
-        phase_inc   <= 20'h2735;  //
+
+        shift_reg  <= 24'h507380;
 
         CS_q    <= 1'b0;
         CS_qq   <= 1'b0;
@@ -86,8 +89,6 @@ begin
                 end
             end
             state_done: begin
-                phase_inc <= shift_reg[19:0];
-                gain      <= shift_reg[22:20];
                 state <= state_idle;
             end
             default:

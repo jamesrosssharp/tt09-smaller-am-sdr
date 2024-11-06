@@ -16,7 +16,10 @@ module envelope_detector (
     output reg signed [7:0] env_out
 ); 
 
-reg [7:0] env_det;
+wire [7:0] env_det = (ifreq < 0) ? -ifreq : ifreq;
+
+// Uncomment this to meet timing in ice40 FPGA
+/*reg [7:0] env_det;
 
 always @(posedge clk)
 begin
@@ -28,7 +31,7 @@ begin
         else
             env_det <= ifreq;
     end
-end
+end*/
 
 /* Low pass filter */
 
