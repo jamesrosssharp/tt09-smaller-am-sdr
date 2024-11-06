@@ -29,7 +29,7 @@ async def test_am_freq(dut, gen_freq, mod_freq, clock_freq):
 
     await ClockCycles(dut.clk, 10)
 
-    freq = int((1<<20) * (mod_freq - 455000) / clock_freq) | (3 << 20)
+    freq = int((1<<20) * (mod_freq - 455000) / clock_freq) | (1 << 20)
 #    freq = int((1<<20) * (455000) / clock_freq) | (2 << 20)
     print("Freq param: %x" % freq)
 
@@ -57,7 +57,7 @@ async def test_am_freq(dut, gen_freq, mod_freq, clock_freq):
     # Deassert chip select
     dut.ui_in.value = 0xe
 
-    await ClockCycles(dut.clk, 200)
+    await ClockCycles(dut.clk, 1000)
 
     # Create modulated data
     t = np.linspace(0, 0.01, 500)

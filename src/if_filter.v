@@ -62,17 +62,17 @@ begin
 
         case (gain_spi)
             3'd0:
-                 if_filt_out <= sum_out[21:14];
+                 if_filt_out <= sum[21:14];
             3'd1:
-                 if_filt_out <= sum_out[20:13];
+                 if_filt_out <= sum[20:13];
             3'd2:
-                 if_filt_out <= sum_out[19:12];
+                 if_filt_out <= sum[19:12];
             3'd3:
-                 if_filt_out <= sum_out[18:11];
+                 if_filt_out <= sum[18:11];
             3'd4:
-                 if_filt_out <= sum_out[17:10];
+                 if_filt_out <= sum[17:10];
             default:
-                 if_filt_out <= sum_out[16:9];
+                 if_filt_out <= sum[16:9];
         endcase
 
        // Uncomment this to meet timing on FPGA
